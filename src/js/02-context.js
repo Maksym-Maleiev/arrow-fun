@@ -63,14 +63,18 @@
 const objA = {
   x: 5,
   showX() {
+    console.log('this in objA.showX: ', this);
     console.log(this.x);
 
     const objB = {
       y: 10,
-      showThis() {
-        console.log('this in objB.showThis ', this);
+      // 💩
+      showThis: () => {
+        console.log('this in objB.showThis: ', this);
       },
     };
+
+    objB.showThis();
   },
 };
 
