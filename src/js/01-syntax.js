@@ -43,7 +43,7 @@
  * Псевдомасив arguments
  */
 
-const add = () => {
+const add = (...arguments) => {
   console.log(arguments);
 };
 
