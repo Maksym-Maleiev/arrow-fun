@@ -1,6 +1,6 @@
-const add = function (a, b) {
-  return a + b;
-};
+// const add = function (a, b) {
+//   return a + b;
+// };
 
 /*
  * Синтаксис стрілочної функції
@@ -8,6 +8,12 @@ const add = function (a, b) {
  * - з одним параметром
  * - без параметрів
  */
+
+const add = (a, b) => {
+  return a + b;
+};
+
+console.log(add(2, 3));
 
 /*
  * Явне і неявне повернення
