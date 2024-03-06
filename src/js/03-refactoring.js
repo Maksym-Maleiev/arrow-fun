@@ -4,6 +4,10 @@
 
 const numbers = [1, 5, 2, 4, 3];
 
+const greaterThenTwo = numbers.filter(num => num > 2);
+
+console.log(greaterThenTwo);
+
 /*
  * Сортуємо тих хто онлайн за рангом
  */
