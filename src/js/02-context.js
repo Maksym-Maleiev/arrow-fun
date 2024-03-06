@@ -36,12 +36,22 @@
  * 💩 Стрілки як методи об'єкта
  */
 
-const user = {
-  fullName: 'Mango',
-  showName: () => {
-    console.log('this: ', this);
-    console.log('this.fullName: ', this.fullName);
-  },
+// const user = {
+//   fullName: 'Mango',
+//   showName: () => {
+//     console.log('this: ', this);
+//     console.log('this.fullName: ', this.fullName);
+//   },
+// };
+
+// user.showName();
+
+/*
+ * 💩 Стрілка-конструктор
+ */
+
+const User = name => {
+  this.name = name;
 };
 
-user.showName();
+console.log(new User('Mango'));
