@@ -64,6 +64,13 @@ const objA = {
   x: 5,
   showX() {
     console.log(this.x);
+
+    const objB = {
+      y: 10,
+      showThis() {
+        console.log('this in objB.showThis');
+      },
+    };
   },
 };
 
