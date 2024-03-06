@@ -49,14 +49,25 @@ const players = [
  * Збільшуємо кількість поінтів кожного гравця
  */
 
-const updatedPlayers = players.map(player => ({
-  ...player,
-  points: player.points + player.points * 0.1,
-}));
+// const updatedPlayers = players.map(player => ({
+//   ...player,
+//   points: player.points + player.points * 0.1,
+// }));
 
-console.table(updatedPlayers);
-console.table(players);
+// console.table(updatedPlayers);
+// console.table(players);
 
 /*
  * Збільшуємо кількість годин гравця по id
  */
+
+const playerIdToUpdate = 'player-3';
+
+const updatedPlayers = players.map(player =>
+  player.id === playerIdToUpdate
+    ? { ...player, timePlayed: player.timePlayed + 50 }
+    : player
+);
+
+console.table(updatedPlayers);
+console.table(players);
