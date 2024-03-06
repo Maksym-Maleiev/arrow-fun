@@ -59,3 +59,12 @@
 /*
  * ще раз стрілка як метод об'єкта
  */
+
+const objA = {
+  x: 5,
+  showX() {
+    console.log(this.x);
+  },
+};
+
+objA.showX();
