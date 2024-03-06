@@ -68,7 +68,7 @@ const objA = {
     const objB = {
       y: 10,
       showThis() {
-        console.log('this in objB.showThis');
+        console.log('this in objB.showThis ', this);
       },
     };
   },
