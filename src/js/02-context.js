@@ -50,8 +50,12 @@
  * 💩 Стрілка-конструктор
  */
 
-const User = name => {
-  this.name = name;
-};
+// const User = name => {
+//   this.name = name;
+// };
 
-console.log(new User('Mango'));
+// console.log(new User('Mango'));
+
+/*
+ * ще раз стрілка як метод об'єкта
+ */
