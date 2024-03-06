@@ -50,11 +50,12 @@ const players = [
  */
 
 const updatedPlayers = players.map(player => ({
-  ...players,
+  ...player,
   points: player.points + player.points * 0.1,
 }));
 
-console.log(updatedPlayers);
+console.table(updatedPlayers);
+console.table(players);
 
 /*
  * Збільшуємо кількість годин гравця по id
