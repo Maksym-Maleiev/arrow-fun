@@ -35,10 +35,16 @@
 //   return a + b;
 // };
 
-const add = (a, b) => a + b;
+// const add = (a, b) => a + b;
 
-console.log(add(2, 3));
+// console.log(add(2, 3));
 
 /*
  * Псевдомасив arguments
  */
+
+const add = () => {
+  console.log(arguments);
+};
+
+add(2, 3, 4, 5, 6, 7);
