@@ -9,12 +9,23 @@
  * - без параметрів
  */
 
-const add = (a, b) => {
-  return a + b;
+// const add = (a, b) => {
+//   return a + b;
+// };
+
+// console.log(add(2, 3));
+
+// const logMessage = message => {
+//   console.log(message);
+// };
+
+// logMessage('Hello');
+
+const greet = () => {
+  console.log('Hello');
 };
 
-console.log(add(2, 3));
-
+greet();
 /*
  * Явне і неявне повернення
  */
